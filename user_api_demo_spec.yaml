@@ -8,13 +8,19 @@ paths:
       summary: Log out a user
       responses:
         '200':
-          description: User logged out successfully. Test
+          description: User logged out successfully.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/SuccessMessage'
         '401':
           description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorMessage'
+        '403':
+          description: Not Allowed
           content:
             application/json:
               schema:
