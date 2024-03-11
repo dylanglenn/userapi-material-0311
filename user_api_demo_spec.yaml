@@ -8,7 +8,7 @@ paths:
       summary: Log out a user
       responses:
         '200':
-          description: User logged out successfully.
+          description: User logged out successfully. Test
           content:
             application/json:
               schema:
